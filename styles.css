@@ -8,14 +8,14 @@
 /* Global Styles */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f9f9f9; /* Light background from Public Palette */
-  color: #333333; /* Text color from Public Palette */
+  background-color: #2C3E50; /* Dark background */
+  color: #ECF0F1; /* Light text for contrast */
   line-height: 1.6;
 }
 
 header {
-  background-color: #2C3E50; /* Darker header color from Public Palette */
-  color: #ECF0F1; /* Light text for contrast */
+  background-color: #34495E; /* Slightly lighter header */
+  color: #ECF0F1;
   padding: 15px 0;
   text-align: center;
 }
@@ -32,7 +32,7 @@ nav ul {
 }
 
 nav a {
-  color: #ECF0F1; /* Link color */
+  color: #ECF0F1; /* Light text */
   text-decoration: none;
   font-weight: bold;
   padding: 5px 10px;
@@ -40,7 +40,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #34495E; /* Slight hover effect */
+  background-color: #1ABC9C; /* Accent hover color */
 }
 
 main {
@@ -48,18 +48,18 @@ main {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  background: #ffffff; /* White card-like appearance */
+  background: #1A242F; /* Dark card background */
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 main h1 {
   font-size: 2em;
-  color: #2C3E50;
+  color: #1ABC9C; /* Accent color for headings */
 }
 
 footer {
-  background-color: #2C3E50;
+  background-color: #34495E;
   color: #ECF0F1;
   text-align: center;
   padding: 10px 0;
@@ -67,7 +67,7 @@ footer {
 }
 
 button {
-  background-color: #E74C3C; /* Button color from Public Palette */
+  background-color: #1ABC9C; /* Button accent color */
   color: #ffffff;
   padding: 10px 20px;
   border: none;
@@ -77,7 +77,7 @@ button {
 }
 
 button:hover {
-  background-color: #C0392B; /* Darker hover effect */
+  background-color: #16A085; /* Darker hover effect */
 }
 
 /* Form Styles */
@@ -88,24 +88,30 @@ form {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #ECF0F1; /* Soft form background */
+  background-color: #34495E; /* Darker form background */
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 input, textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #BDC3C7; /* Neutral border */
+  border: 1px solid #1ABC9C; /* Accent border */
   border-radius: 5px;
+  background-color: #2C3E50; /* Dark input background */
+  color: #ECF0F1; /* Light text */
 }
 
 input:focus, textarea:focus {
-  border-color: #3498DB; /* Focused border color */
+  border-color: #16A085; /* Focused border color */
   outline: none;
 }
 
 button[type="submit"] {
   align-self: flex-start;
-  background-color: #3498DB;
+  background-color: #1ABC9C;
+}
+
+button[type="submit"]:hover {
+  background-color: #16A085;
 }

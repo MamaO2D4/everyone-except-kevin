@@ -1,51 +1,111 @@
-/* Basic Reset */
-body, h1, p, ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-   
-  /* Global Styles */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Use a color from the Public Palette */
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: #333; /* Use a darker color from the Public Palette */
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  header .logo {
-    width: 150px;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  main {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-  }
-  
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9; /* Light background from Public Palette */
+  color: #333333; /* Text color from Public Palette */
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2C3E50; /* Darker header color from Public Palette */
+  color: #ECF0F1; /* Light text for contrast */
+  padding: 15px 0;
+  text-align: center;
+}
+
+header .logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #ECF0F1; /* Link color */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #34495E; /* Slight hover effect */
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background: #ffffff; /* White card-like appearance */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+  font-size: 2em;
+  color: #2C3E50;
+}
+
+footer {
+  background-color: #2C3E50;
+  color: #ECF0F1;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #E74C3C; /* Button color from Public Palette */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #C0392B; /* Darker hover effect */
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ECF0F1; /* Soft form background */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #BDC3C7; /* Neutral border */
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+  border-color: #3498DB; /* Focused border color */
+  outline: none;
+}
+
+button[type="submit"] {
+  align-self: flex-start;
+  background-color: #3498DB;
+}
